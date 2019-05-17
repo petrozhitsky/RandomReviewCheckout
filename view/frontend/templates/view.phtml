@@ -1,0 +1,63 @@
+<?php
+/**
+ * @var \Netzexpert\RandomReview\Block\View $block
+ */
+//$review = $block->getReview();
+$votes = $block->getVotes();
+?>
+<div class="title-custom">
+    <span>Bewertungen</span>
+</div>
+<div class="custom-review">
+<?php foreach ($votes as $vote) { ?>
+
+    <?php $rating = $vote->getData('percent'); ?>
+    <div class="review-block">
+        <div class="review-nickname">
+            <?php $review = $block->getReview($vote); ?>
+            <span><?= /* @escapeNotVerified */ $review->getData('nickname'); ?></span>
+        </div>
+
+        <div class="review-date">
+            <span><?= /* @escapeNotVerified */ date('d.m.Y', strtotime($review->getData('created_at'))); ?></span>
+        </div>
+
+        <div class="rating-summary">
+            <div class="rating-result" title="<?= $block->escapeHtmlAttr($rating); ?>%">
+             <span style="width:<?= $block->escapeHtmlAttr($rating); ?>%">
+                 <span>
+                     <?= $block->escapeHtml($rating); ?>
+                 </span>
+             </span>
+            </div>
+        </div>
+
+        <div class="review-detalied">
+            <?php $review = $block->getReview($vote); ?>
+            <p><?= /* @escapeNotVerified */ $review->getData('detail'); ?></p>
+        </div>
+    </div>
+
+<?php } ?>
+</div>
+<!--<script>
+    require(
+        [
+            'jquery',
+            'slick',
+            'owlCarousel'
+        ], function ($) {
+            $(document).ready(function(){
+                $(".custom-review").slick({
+                    autoplay: false,
+                    autoplaySpeed: 5000
+                });
+                /*$(".custom-review").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    singleItem:true
+                })*/
+            })
+        }
+    )
+</script>-->
