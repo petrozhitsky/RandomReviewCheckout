@@ -1,7 +1,7 @@
 var config = {
     paths: {
-        slick: 'Netzexpert_RandomReview/js/slick.min',
-        owlCarousel: "Netzexpert_RandomReview/js/owl.carousel.min"
+        slick: 'Netzexpert_RandomReviewCheckout/js/slick.min',
+        owlCarousel: "Netzexpert_RandomReviewCheckout/js/owl.carousel.min"
     },
     shim: {
         slick: {

@@ -12,7 +12,7 @@ define(
         'use strict';
         return Component.extend({
             defaults: {
-                template: 'Netzexpert_RandomReview/review'
+                template: 'Netzexpert_RandomReviewCheckout/review'
             },
 
             initialize: function () {

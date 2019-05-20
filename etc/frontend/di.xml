@@ -4,7 +4,7 @@
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="checkout_review_config_provider" xsi:type="object">Netzexpert\RandomReview\Model\ConfigProvider</item>
+                <item name="checkout_review_config_provider" xsi:type="object">Netzexpert\RandomReviewCheckout\Model\ConfigProvider</item>
             </argument>
         </arguments>
     </type>

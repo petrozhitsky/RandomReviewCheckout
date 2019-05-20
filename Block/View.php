@@ -1,5 +1,5 @@
 <?php
-namespace Netzexpert\RandomReview\Block;
+namespace Netzexpert\RandomReviewCheckout\Block;
 use Magento\Catalog\Model\Product;
 use Magento\Catalog\Model\ProductRepository;
 use Magento\Framework\Filter\FilterManager;
@@ -7,7 +7,7 @@ use Magento\Framework\View\Element\Template;
 use Magento\Review\Model\Rating\Option\Vote;
 use Magento\Review\Model\ResourceModel\Rating\Option\Vote\Collection;
 use Magento\Review\Model\Review;
-use Netzexpert\RandomReview\Model\CustomReview;
+use Netzexpert\RandomReviewCheckout\Model\CustomReview;
 
 class View extends Template
 {

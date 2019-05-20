@@ -6,7 +6,7 @@
     </head>
     <body>
         <referenceContainer name="checkout.cart.container">
-            <block class="Netzexpert\RandomReview\Block\View" name="random.review" as="random_review" template="Netzexpert_RandomReview::view.phtml" after="cart.summary" />
+            <block class="Netzexpert\RandomReviewCheckout\Block\View" name="random.review" as="random_review" template="Netzexpert_RandomReviewCheckout::view.phtml" after="cart.summary" />
         </referenceContainer>
     </body>
 </page>

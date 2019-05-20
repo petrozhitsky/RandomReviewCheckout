@@ -8,11 +8,11 @@
                             <item name="children" xsi:type="array">
                                 <item name="sidebar" xsi:type="array">
                                     <item name="config" xsi:type="array">
-                                        <item name="template" xsi:type="string">Netzexpert_RandomReview/sidebar</item>
+                                        <item name="template" xsi:type="string">Netzexpert_RandomReviewCheckout/sidebar</item>
                                     </item>
                                     <item name="children" xsi:type="array">
                                         <item name="review" xsi:type="array">
-                                            <item name="component" xsi:type="string">Netzexpert_RandomReview/js/view/review</item>
+                                            <item name="component" xsi:type="string">Netzexpert_RandomReviewCheckout/js/view/review</item>
                                             <item name="displayArea" xsi:type="string">sidebar</item>
                                         </item>
                                     </item>

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Netzexpert\RandomReview\Model;
+namespace Netzexpert\RandomReviewCheckout\Model;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 use Magento\Framework\View\LayoutInterface;
@@ -22,8 +22,8 @@ class ConfigProvider implements ConfigProviderInterface
         //$myBlockId = 20; // CMS Block ID
 
         return [
-            'checkout_review' => $this->_layout->createBlock('Netzexpert\RandomReview\Block\View')
-                ->setTemplate('Netzexpert_RandomReview::view.phtml')
+            'checkout_review' => $this->_layout->createBlock('Netzexpert\RandomReviewCheckout\Block\View')
+                ->setTemplate('Netzexpert_RandomReviewCheckout::view.phtml')
                 ->toHtml()
         ];
     }

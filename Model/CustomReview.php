@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Netzexpert\RandomReview\Model;
+namespace Netzexpert\RandomReviewCheckout\Model;
 
 use Magento\Review\Model\Rating\Option\Vote;
 use Magento\Review\Model\ResourceModel\Rating\Option\Vote\Collection;
